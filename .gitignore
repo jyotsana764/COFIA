@@ -1,0 +1,26 @@
+# Environment files and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Node and build output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+.vercel/
+
+# Runtime uploads and temporary source copies
+/frontend/uploads/
+/frontend/footwear-uploads/
+/frontend/public/images/
+/frontend/src/pages/EthnicWear.jsx.backup
+/frontend/image-names.txt
+
+# Logs and editor files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+.vscode/
+.idea/
