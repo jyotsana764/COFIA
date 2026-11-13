@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">COFIA — Explore Your Style</title>
+  <desc id="desc">A warm cream and forest green fashion banner with gold botanical accents.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172d22"/>
+      <stop offset="0.58" stop-color="#294936"/>
+      <stop offset="1" stop-color="#725c35"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5dfaa"/>
+      <stop offset="1" stop-color="#c8a76a"/>
+    </linearGradient>
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#fff" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="330" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="330" rx="28" fill="url(#grain)"/>
+  <path d="M38 290C110 256 109 185 179 140c41-27 62-59 80-97M37 290c54-8 87 6 112 31M97 237c-29-23-36-46-34-68m75 8c-4-33 7-57 28-79m-11 152c32-7 55-23 70-49" fill="none" stroke="url(#gold)" stroke-width="2" opacity=".72"/>
+  <path d="M1162 39c-66 34-66 105-137 150-41 27-62 59-80 97m255-246c-54 8-87-6-112-31m52 84c29 23 36 46 34 68m-75-8c4 33-7 57-28 79m11-152c-32 7-55 23-70 49" fill="none" stroke="url(#gold)" stroke-width="2" opacity=".72"/>
+  <g fill="url(#gold)" opacity=".8">
+    <ellipse cx="80" cy="205" rx="8" ry="22" transform="rotate(-38 80 205)"/>
+    <ellipse cx="160" cy="113" rx="7" ry="20" transform="rotate(42 160 113)"/>
+    <ellipse cx="1118" cy="125" rx="8" ry="22" transform="rotate(38 1118 125)"/>
+    <ellipse cx="1040" cy="218" rx="7" ry="20" transform="rotate(-42 1040 218)"/>
+  </g>
+  <text x="600" y="145" text-anchor="middle" fill="#fffaf0" font-family="Georgia, 'Times New Roman', serif" font-size="86" letter-spacing="8">COFIA</text>
+  <path d="M450 174h300" stroke="url(#gold)" stroke-width="2"/>
+  <text x="600" y="216" text-anchor="middle" fill="#f2dfb6" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="5">EXPLORE YOUR STYLE</text>
+  <text x="600" y="266" text-anchor="middle" fill="#fffaf0" font-family="Arial, Helvetica, sans-serif" font-size="17" opacity=".88">FASHION · FOOTWEAR · JEWELLERY · FRAGRANCE</text>
+</svg>

@@ -1,16 +1,18 @@
-<div align="center">
+<p align="center">
+  <img src="assets/cofia-readme-banner.svg" alt="COFIA — Explore Your Style" width="100%" />
+</p>
 
-# COFIA — Explore Your Style
+<div align="center">
 
 **A modern fashion storefront for clothing, footwear, jewellery, and fragrances.**
 
 Discover curated collections, browse products, and shop from a responsive storefront backed by an admin dashboard and API.
 
-[![Live storefront](https://img.shields.io/badge/Live%20storefront-Visit%20COFIA-263b2b?style=for-the-badge&logo=vercel&logoColor=white)](https://cofia-ochre.vercel.app)
-![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=flat&logo=react&logoColor=20232A)
-![Vite](https://img.shields.io/badge/Build-Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Node.js](https://img.shields.io/badge/API-Node.js-5FA04E?style=flat&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/Data-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+[![Shop COFIA](https://img.shields.io/badge/LIVE%20STOREFRONT-Visit%20COFIA-24412F?style=for-the-badge&labelColor=C5A66A)](https://cofia-ochre.vercel.app)
+&nbsp; ![React](https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=20232A)
+![Vite](https://img.shields.io/badge/VITE-7564D8?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/NODE.JS-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 </div>
 
@@ -33,7 +35,7 @@ COFIA is a full-stack fashion commerce project with three applications: a custom
 
 **Live demo:** [cofia-ochre.vercel.app](https://cofia-ochre.vercel.app)
 
-## Features
+## ✨ Features
 
 - Browse clothing, shoes and footwear, jewellery, and perfume collections.
 - Search products and view product details.
@@ -42,7 +44,7 @@ COFIA is a full-stack fashion commerce project with three applications: a custom
 - Manage products and orders through the admin dashboard.
 - Use the storefront on desktop and mobile screens.
 
-## Architecture
+## 🧭 Architecture
 
 ```mermaid
 flowchart LR
@@ -54,7 +56,7 @@ flowchart LR
     API --> Cloudinary[Cloudinary media]
 ```
 
-## Technology
+## 🧵 Technology
 
 | Application | Stack |
 |---|---|
@@ -65,7 +67,7 @@ flowchart LR
 | Product media | Cloudinary |
 | Current storefront hosting | Vercel |
 
-## Project structure
+## 📁 Project structure
 
 ```text
 COFIA/
@@ -75,7 +77,7 @@ COFIA/
 └── screenshots/  # README preview images
 ```
 
-## Run locally
+## 🚀 Run locally
 
 ### Prerequisites
 
@@ -124,7 +126,7 @@ cd admin; npm run dev
 
 Vite prints the local URLs for the storefront and admin dashboard. The API uses the configured port or port `4000` by default.
 
-## Deployment
+## ☁️ Deployment
 
 The customer storefront is deployed at **[cofia-ochre.vercel.app](https://cofia-ochre.vercel.app)**. The API and admin dashboard require their own Vercel projects if you want to deploy the complete stack. Set each project's root directory to `backend`, `admin`, or `frontend`, as appropriate.
 
@@ -133,14 +135,14 @@ The customer storefront is deployed at **[cofia-ochre.vercel.app](https://cofia-
 3. Set `VITE_BACKEND_URL` to the API URL in the storefront and admin projects, then redeploy them.
 4. Verify sign-in, product loading, cart, and admin API behavior.
 
-## Security
+## 🔐 Security
 
 - Real `.env` files are excluded from Git; commit only `.env.example` templates.
 - Keep production credentials in Vercel environment settings or another secure secret store.
 - Never place database passwords, JWT secrets, or Cloudinary API secrets in a `VITE_` variable. Vite includes these values in the browser bundle.
 - Restrict database access to trusted services and rotate credentials if exposed.
 
-## Screenshots
+## 🖼️ Storefront gallery
 
 <p align="center">
   <img src="screenshots/homepage.png" alt="COFIA storefront homepage" width="49%" />
@@ -151,6 +153,6 @@ The customer storefront is deployed at **[cofia-ochre.vercel.app](https://cofia-
   <img src="screenshots/category-collections.png" alt="COFIA clothing, footwear, jewellery, and fragrance collections" width="90%" />
 </p>
 
-## License
+## 📄 License
 
 No license has been selected. All rights are reserved unless a license is added to this repository.
