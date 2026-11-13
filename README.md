@@ -44,7 +44,7 @@ COFIA is a full-stack fashion commerce project with three applications: a custom
 - Manage products and orders through the admin dashboard.
 - Use the storefront on desktop and mobile screens.
 
-## 🧭 Architecture
+##  Architecture
 
 ```mermaid
 flowchart LR
@@ -56,7 +56,7 @@ flowchart LR
     API --> Cloudinary[Cloudinary media]
 ```
 
-## 🧵 Technology
+##  Technology
 
 | Application | Stack |
 |---|---|
@@ -77,7 +77,7 @@ COFIA/
 └── screenshots/  # README preview images
 ```
 
-## 🚀 Run locally
+##  Run locally
 
 ### Prerequisites
 
@@ -142,7 +142,7 @@ The customer storefront is deployed at **[cofia-ochre.vercel.app](https://cofia-
 - Never place database passwords, JWT secrets, or Cloudinary API secrets in a `VITE_` variable. Vite includes these values in the browser bundle.
 - Restrict database access to trusted services and rotate credentials if exposed.
 
-## 🖼️ Storefront gallery
+##  Storefront gallery
 
 <p align="center">
   <img src="screenshots/homepage.png" alt="COFIA storefront homepage" width="49%" />
