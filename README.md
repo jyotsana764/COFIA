@@ -1,85 +1,126 @@
 # COFIA — Explore Your Style
 
-COFIA is a full-stack fashion storefront for clothing, footwear, jewellery, and fragrances. The repository contains the customer storefront, an admin dashboard, and an Express API.
+<p align="center">
+  <strong>A modern fashion storefront for clothing, footwear, jewellery, and fragrances.</strong><br />
+  Discover curated collections, browse products, and shop from one responsive experience.
+</p>
 
-**Live storefront:** [cofia-ochre.vercel.app](https://cofia-ochre.vercel.app)
+<p align="center">
+  <a href="https://cofia-ochre.vercel.app"><strong>Visit the live storefront →</strong></a>
+</p>
 
 ## Storefront preview
 
-<img src="screenshots/homepage.png" alt="COFIA storefront homepage" width="49%" /> <img src="screenshots/latest-collection.png" alt="Latest collection product cards" width="49%" />
+<p align="center">
+  <img src="screenshots/homepage.png" alt="COFIA storefront homepage" width="49%" />
+  <img src="screenshots/latest-collection.png" alt="COFIA latest collection product cards" width="49%" />
+</p>
 
-<img src="screenshots/category-collections.png" alt="COFIA category collections" width="90%" />
+<p align="center">
+  <img src="screenshots/category-collections.png" alt="COFIA clothing, footwear, jewellery, and fragrance categories" width="90%" />
+</p>
 
-## Applications
+## Overview
 
-| App | Folder | Stack | Local command |
-|---|---|---|---|
-| Storefront | `frontend/` | React, Vite | `npm run dev` |
-| Admin dashboard | `admin/` | React, Vite | `npm run dev` |
-| API | `backend/` | Node.js, Express, MongoDB | `npm run dev` |
+COFIA is a full-stack fashion commerce project organized as three applications: a customer storefront, an admin dashboard, and a REST API. The storefront is built with React and Vite; the API uses Express and MongoDB, with Cloudinary support for image uploads.
 
 ## Features
 
-- Product collections for clothing, shoes and footwear, jewellery, and perfume.
-- Product search, category browsing, wishlist, cart, checkout, and order history.
-- Admin screens for products and orders.
-- MongoDB persistence and Cloudinary image storage support.
-- Responsive React storefront and admin dashboard.
+- Browse clothing, shoes and footwear, jewellery, and perfume collections.
+- Search products and view product details.
+- Save favourites to a wishlist and manage a shopping cart.
+- Sign in, place orders, and review order history.
+- Manage products and orders through the admin dashboard.
+- Responsive layouts for desktop and mobile screens.
 
-## Run locally
+## Technology
 
-Prerequisites: Node.js with npm, a MongoDB database, and Cloudinary credentials for image uploads.
+| Area | Technologies |
+|---|---|
+| Storefront and admin | React, Vite, JavaScript |
+| API | Node.js, Express |
+| Data | MongoDB, Mongoose |
+| Product media | Cloudinary |
+| Hosting | Vercel |
 
-1. Clone this repository and open three terminals in its root folder.
-2. Install dependencies in each application folder:
-
-   ```powershell
-   cd frontend; npm install
-   cd ../admin; npm install
-   cd ../backend; npm install
-   ```
-
-3. Create `backend/.env` using the variable names in `backend/.env.example`. Create `frontend/.env` with `VITE_BACKEND_URL=http://localhost:4000`. Set the same `VITE_BACKEND_URL` in `admin/.env`.
-4. Start the apps in separate terminals:
-
-   ```powershell
-   # terminal 1
-   cd backend; npm run dev
-
-   # terminal 2
-   cd frontend; npm run dev
-
-   # terminal 3
-   cd admin; npm run dev
-   ```
-
-Vite prints the local URLs for the storefront and admin app. The backend uses the port configured in its environment.
-
-## Deploy on Vercel
-
-Deploy the API and each Vite app as separate Vercel projects, all connected to the `main` branch of this repository.
-
-1. Import the repository in Vercel and create the API project with **Root Directory** `backend`. Add the production variables from `backend/.env.example` in Vercel Project Settings → Environment Variables. Use production database and Cloudinary values; keep secrets in Vercel, never in Git.
-2. Deploy the API and copy its production URL.
-3. Create the storefront project with **Root Directory** `frontend`. Vercel detects Vite; use `npm run build` and `dist` if asked. Add `VITE_BACKEND_URL` with the API URL, then deploy.
-4. Create the admin project with **Root Directory** `admin`. Add `VITE_BACKEND_URL` with the same API URL, then deploy.
-5. Open both Vite deployment URLs and check the storefront, sign-in, cart, and admin API connection. Add the final storefront URL to the GitHub repository's **About → Website** field.
-
-Vite environment variables are included in the built client bundle. Never put database passwords, JWT secrets, or Cloudinary API secrets in a `VITE_` variable.
-
-## Repository layout
+## Repository structure
 
 ```text
 COFIA/
-├── frontend/   # Customer storefront and product images
-├── admin/      # Admin dashboard
-└── backend/    # Express API, routes, models, and integrations
+├── frontend/     # Customer storefront and product assets
+├── admin/        # Admin dashboard
+├── backend/      # Express API, routes, models, and integrations
+└── screenshots/  # README preview images
 ```
 
-## Environment files
+## Run locally
 
-Use the checked-in `.env.example` files as templates. Real `.env` files are excluded from Git. Never commit passwords, API keys, tokens, or production database URLs.
+### Requirements
+
+- Node.js and npm
+- MongoDB connection string
+- Cloudinary account for image uploads
+
+### Install dependencies
+
+From the repository root, install each app's dependencies:
+
+```powershell
+cd frontend; npm install
+cd ../admin; npm install
+cd ../backend; npm install
+```
+
+### Configure environment variables
+
+Create `backend/.env` using the keys in [`backend/.env.example`](backend/.env.example). For local storefront development, create `frontend/.env`:
+
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+Set the same `VITE_BACKEND_URL` in `admin/.env`. Keep real credentials in local environment files; do not commit them.
+
+### Start the applications
+
+Open three terminals from the repository root:
+
+```powershell
+# Terminal 1: API
+cd backend; npm run dev
+```
+
+```powershell
+# Terminal 2: storefront
+cd frontend; npm run dev
+```
+
+```powershell
+# Terminal 3: admin dashboard
+cd admin; npm run dev
+```
+
+Vite prints the local URLs for the storefront and admin dashboard. The API uses the configured port, or port `4000` by default.
+
+## Deployment
+
+The customer storefront is deployed at **[cofia-ochre.vercel.app](https://cofia-ochre.vercel.app)**. The frontend, admin dashboard, and API can be deployed as separate Vercel projects from this repository by setting each project's root directory to `frontend`, `admin`, or `backend`.
+
+For a connected deployment:
+
+1. Configure the backend environment variables in the API project's Vercel settings using production credentials.
+2. Deploy the API and copy its production URL.
+3. Set `VITE_BACKEND_URL` to that URL in the storefront and admin Vercel projects, then redeploy them.
+4. Verify the storefront, sign-in, cart, and admin API connection.
+
+Never put database passwords, JWT secrets, or Cloudinary API secrets in a `VITE_` variable; Vite exposes those values in the browser bundle.
+
+## Security notes
+
+- Real `.env` files are excluded from Git; only `.env.example` templates should be committed.
+- Use strong production credentials and keep them in Vercel environment settings or a secure local secret store.
+- Restrict database access to trusted services and rotate credentials if they are ever exposed.
 
 ## License
 
-No license has been selected yet. All rights are reserved unless a license is added to this repository.
+No license has been selected. All rights are reserved unless a license is added to this repository.
