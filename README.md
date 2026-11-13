@@ -2,6 +2,14 @@
 
 COFIA is a full-stack fashion storefront for clothing, footwear, jewellery, and fragrances. The repository contains the customer storefront, an admin dashboard, and an Express API.
 
+**Live storefront:** [cofia-ochre.vercel.app](https://cofia-ochre.vercel.app)
+
+## Storefront preview
+
+<img src="screenshots/homepage.png" alt="COFIA storefront homepage" width="49%" /> <img src="screenshots/latest-collection.png" alt="Latest collection product cards" width="49%" />
+
+<img src="screenshots/category-collections.png" alt="COFIA category collections" width="90%" />
+
 ## Applications
 
 | App | Folder | Stack | Local command |
